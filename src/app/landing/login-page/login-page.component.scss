@@ -1,0 +1,18 @@
+.backimg{
+    background-image: url('../../../assets/images.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.example-full-width{
+    width: 100%;
+}
+.logincard{
+    width: 100%;
+}

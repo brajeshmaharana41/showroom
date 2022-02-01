@@ -1,0 +1,36 @@
+<div class="backimg">
+    <div class="container">
+        <div fxLayoutAlign="center center" class="pt-5">
+            <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="30" fxFlex.lg="30" fxFlex.xl="30">
+                <mat-card class="mt-5 logincard">
+                    <div fxLayoutAlign="center center">
+                        <h2>Show Room</h2>
+                    </div>
+                    <div>
+                        <form class="example-form">
+                            <div fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="gappx">
+                                <mat-form-field class="example-full-width" appearance="fill">
+                                    <!-- <span matPrefix>+91 &nbsp;</span> -->
+                                    <input type="tel" matInput placeholder="Compony Code">
+                                </mat-form-field>
+                                <mat-form-field class="example-full-width" appearance="fill">
+                                    <input type="text" matInput placeholder="Username">
+                                </mat-form-field>
+                                <mat-form-field appearance="fill" class="example-full-width">
+                                    <input matInput [type]="hide ? 'password' : 'text'" placeholder="Password">
+                                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                                    </button>
+                                  </mat-form-field>
+                            </div>
+                            <div fxLayoutAlign="center center">
+                                <button mat-button color="primary">LOG IN</button>
+                            </div>
+                          </form>
+                    </div>
+                </mat-card>  
+            </div>
+        </div>
+    </div>
+</div>
+

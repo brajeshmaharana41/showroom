@@ -1,0 +1,27 @@
+<div class="example-container">
+    <mat-toolbar class="example-toolbar" style="background-color:#1f3652; color: #ffffff;">
+      <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+      <h1 class="example-app-name">Show Room</h1>
+    </mat-toolbar>
+  
+    <mat-sidenav-container class="example-sidenav-container">
+      <mat-sidenav #snav fixedTopGap="56" class="sidenavcolor">
+        <mat-nav-list>
+          <a mat-list-item class="listcol">Dashboard</a>
+          <a mat-list-item (click)="showFiller = !showFiller" class="listcol">Agreements<mat-icon matSuffix class="pl-2">arrow_drop_down</mat-icon></a>
+            <a mat-list-item *ngIf="showFiller" class="pl-3" class="listcol">New Agreements</a>
+            <a mat-list-item *ngIf="showFiller" class="pl-3" class="listcol">View</a>
+          <a mat-list-item class="listcol">hi</a>
+          <a mat-list-item class="listcol">hi</a>
+          <a mat-list-item class="listcol">hi</a>
+          <a mat-list-item class="listcol">hi</a>
+          <a mat-list-item class="listcol">hi</a>
+        </mat-nav-list>
+      </mat-sidenav>
+  
+      <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+    
