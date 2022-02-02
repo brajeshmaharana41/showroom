@@ -19,6 +19,16 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatMenuModule} from '@angular/material/menu';
+import { SignupPageComponent } from './landing/signup-page/signup-page.component';
+import { NewAgreementsComponent } from './main/agreements/new-agreements/new-agreements.component';
+import { DashboardComponent } from './main/dashboard/dashboard.component';
+import {MatStepperModule} from '@angular/material/stepper';
+import { CreateDetailsComponent } from './main/agreements/new-agreements/create-details/create-details.component';
+import {MatTabsModule} from '@angular/material/tabs';
+import { ProductDetailsComponent } from './main/agreements/new-agreements/product-details/product-details.component';
+import { FinanciaDetailsComponent } from './main/agreements/new-agreements/financia-details/financia-details.component';
+import { GuarantorDetailsComponent } from './main/agreements/new-agreements/guarantor-details/guarantor-details.component';
+import { EmiDetailsComponent } from './main/agreements/new-agreements/emi-details/emi-details.component';
 
 
 @NgModule({
@@ -26,7 +36,15 @@ import {MatMenuModule} from '@angular/material/menu';
     AppComponent,
     LoginPageComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    SignupPageComponent,
+    NewAgreementsComponent,
+    DashboardComponent,
+    CreateDetailsComponent,
+    ProductDetailsComponent,
+    FinanciaDetailsComponent,
+    GuarantorDetailsComponent,
+    EmiDetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,8 +59,10 @@ import {MatMenuModule} from '@angular/material/menu';
     MatSidenavModule,
     MatCardModule,
     FlexLayoutModule,
+    MatTabsModule,
     MatMenuModule,
     MatExpansionModule,
+    MatStepperModule,
     MatInputModule,
     MatFormFieldModule,
     BrowserAnimationsModule

@@ -25,10 +25,13 @@
     flex: 1 0 auto;
   }
   .sidenavcolor{
-    background-color: #1f3652;
+    // background-color: #1f3652;
     width: 230px;
     .listcol{
-      color: white;
-      border-bottom: 1px solid rgb(141, 141, 141);
+      color: black;
+      // border-bottom: 1px solid rgb(141, 141, 141);
+    }
+    .prdarray{
+      padding-left: 126px;
     }
   }
