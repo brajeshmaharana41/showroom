@@ -3,40 +3,71 @@
         <div>
             <h1>Financia Details</h1>
         </div>
-        <div>
+        <div class="container">
             <form>
-                <div fxLayout="column">
-                    <div fxLayoutAlign="start center">
-                        <mat-form-field class="example-full-width" appearance="fill">
-                            <mat-label>Agreement Date</mat-label>
-                            <input matInput placeholder="First Name" value="Sushi">
-                        </mat-form-field>
+                <div fxLayout="row wrap">
+                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50" class="p-2">
+                        <div fxLayoutAlign="center center">
+                            <mat-form-field class="example-full-width" appearance="outline">
+                                <mat-label>Agreement Date</mat-label>
+                                <input matInput placeholder="Agreement Date">
+                            </mat-form-field>
+                        </div>
                     </div>
-                    <div fxLayoutAlign="start center">
-                        <mat-form-field class="example-full-width" appearance="fill">
-                            <mat-label>Tenure</mat-label>
-                            <input matInput placeholder="First Name" value="Sushi">
-                        </mat-form-field>
+                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50" class="p-2">
+                        <div fxLayoutAlign="center center">
+                            <mat-form-field class="example-full-width" appearance="outline">
+                                <mat-label>Initial Amount</mat-label>
+                                <input matInput placeholder="Initial Amount">
+                            </mat-form-field>
+                        </div>
                     </div>
-                    <div fxLayoutAlign="start center">
-                        <mat-form-field class="example-full-width" appearance="fill">
-                            <mat-label>RTC/LC Charges</mat-label>
-                            <input matInput placeholder="First Name" value="Sushi">
-                        </mat-form-field>
+                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100" fxFlex.xl="100" class="p-2">
+                        <div fxLayoutAlign="center center">
+                            <mat-form-field class="example-full-width" appearance="outline">
+                                <mat-label>Tenure</mat-label>
+                                <input matInput placeholder="Tenure">
+                            </mat-form-field>
+                        </div>
                     </div>
-                    <div fxLayoutAlign="start center">
-                        <mat-form-field class="example-full-width" appearance="fill">
-                            <mat-label>Document Charges</mat-label>
-                            <input matInput placeholder="First Name" value="Sushi">
-                        </mat-form-field>
+                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50" class="p-2">
+                        <div fxLayoutAlign="center center">
+                            <mat-form-field class="example-full-width" appearance="outline">
+                                <mat-label>Document Charges</mat-label>
+                                <input matInput placeholder="Document Charges">
+                            </mat-form-field>
+                        </div>
                     </div>
-                    <div fxLayoutAlign="start center">
-                        <mat-form-field class="example-full-width" appearance="fill">
-                            <mat-label>RTC/LC Charges</mat-label>
-                            <input matInput placeholder="First Name" value="Sushi">
-                        </mat-form-field>
+                <!-- </div>
+                <div fxLayout="row wrap">   -->
+                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50" class="p-2">
+                        <div fxLayoutAlign="center center">
+                            <mat-form-field class="example-full-width" appearance="outline">
+                                <mat-label>RTO/LT Charges</mat-label>
+                                <input matInput placeholder="RTO/LT Charges">
+                            </mat-form-field>
+                        </div>
                     </div>
-                </div>
+                    <!-- <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50" class="p-2">
+                        <div fxLayoutAlign="center center">
+                            <mat-form-field class="example-full-width" appearance="outline">
+                                <mat-label>Engine Number</mat-label>
+                                <input matInput placeholder="Engine Number">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50" class="p-2">
+                        <div fxLayoutAlign="center center">
+                            <mat-form-field class="example-full-width" appearance="outline">
+                                <mat-label>Vehicle Registration Date</mat-label>
+                                <input matInput placeholder="Vehicle Registration Date">
+                            </mat-form-field>
+                        </div>
+                    </div> -->
+                </div>    
+            <div fxLayoutAlign="center center">
+                <button mat-button class="btn_sub">Submit</button>
+            </div>
             </form>
         </div>
     </mat-card>
